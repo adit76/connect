@@ -11,7 +11,6 @@
 
 html {
   /* default font-size / 14px=1rem  */
-  font-size: 14px;
   color: #000;
 }
 
@@ -19,9 +18,57 @@ body {
   color: #000;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  background: #EFE1D4;
+  height: 0.625rem !important;
+  opacity: 1;
+  margin: 0;
+}
+
 /* ==========================================================================
    Importing Styles
 ========================================================================== */
+.section-title-container {
+  margin-bottom: -3%;
+}
+
+.section-title-container .section-title {
+  width: 88%;
+  height: auto;
+}
+
+h4.section-sub-title {
+  margin: 48px 0;
+}
+
+#connect-section {
+  background: #C3C3B3;
+  padding: 7.5rem 0;
+}
+
+.promotion-section {
+  padding-bottom: 7.5rem;
+}
+
 /* ==========================================================================
    Custom Container, Grid System
 ========================================================================== */
@@ -33,81 +80,81 @@ body {
 
 @media screen and (max-width: 1679px) {
   .custom-container {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
   }
 }
 
 @media screen and (max-width: 1299px) {
   .custom-container {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
   }
 }
 
 @media screen and (max-width: 899px) {
   .custom-container {
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: 1.5re;
+    margin-right: 1.5re;
   }
 }
 
 @media screen and (max-width: 599px) {
   .custom-container {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
 .row.custom-gutter {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
 }
 
 @media screen and (max-width: 1299px) {
   .row.custom-gutter {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 }
 
 @media screen and (max-width: 899px) {
   .row.custom-gutter {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 }
 
 @media screen and (max-width: 599px) {
   .row.custom-gutter {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 
 .row.custom-gutter > div {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
 }
 
 @media screen and (max-width: 1299px) {
   .row.custom-gutter > div {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
 @media screen and (max-width: 899px) {
   .row.custom-gutter > div {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
 @media screen and (max-width: 599px) {
   .row.custom-gutter > div {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -115,22 +162,24 @@ body {
    Fonts
 ========================================================================== */
 h2 {
-  font-size: 4.5rem;
+  font-size: 3.9375rem;
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   line-height: 56.7px;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 375px) {
   h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 22.5px;
+    margin-bottom: 12px;
   }
 }
 
 h4 {
-  font-size: 3.35714rem;
+  font-size: 2.9375rem;
   font-family: "Galaxie Copernicus";
   font-weight: 400;
   line-height: 47px;
@@ -139,13 +188,13 @@ h4 {
 
 @media screen and (max-width: 375px) {
   h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 24px;
   }
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   line-height: 25.2px;
@@ -154,13 +203,13 @@ h5 {
 
 @media screen and (max-width: 375px) {
   h5 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 12.3px;
   }
 }
 
 p {
-  font-size: 1.92857rem;
+  font-size: 1.6875rem;
   font-family: "Galaxie Copernicus";
   font-weight: 400;
   line-height: 32.4px;
@@ -169,8 +218,50 @@ p {
 
 @media screen and (max-width: 375px) {
   p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19.2px;
   }
+}
+
+/* ==========================================================================
+   Button
+========================================================================== */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6875rem;
+  font-family: "Galaxie Copernicus";
+  font-weight: 400;
+  height: 4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border: 1px solid;
+  margin-top: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.btn svg {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    font-size: 1rem;
+    line-height: 19.2px;
+    height: 3rem;
+    margin-top: 1.375rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.btn-peach {
+  background: #EFE1D4;
+  border-color: #EFE1D4;
 }
 /*# sourceMappingURL=main.css.map */
