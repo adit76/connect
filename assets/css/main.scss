@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    Variable Declarations
 ========================================================================== */
@@ -7,10 +8,10 @@
    $dustyLilac: #EFE1D4;
    $peach: #EFE1D4;
    // Fonts Sizes
-   $h2: 4.5rem;
-   $h4: 3.35714285714rem;
-   $h5: 2rem;
-   $p1: 1.92857142857rem;  
+   $h2: 3.9375rem;
+   $h4: 2.9375rem;
+   $h5: 1.75rem;
+   $p1: 1.6875rem;  
    //  Font Family
    $sunset-gothic: 'Gothic A1', sans-serif;
    $garamond: 'Galaxie Copernicus';
@@ -20,7 +21,7 @@
    $M: 899px;
    $L: 1299px;
    $XL: 1679px;
-
+ 
 
 
 
@@ -34,7 +35,6 @@
 
    html{
       /* default font-size / 14px=1rem  */
-      font-size: 14px;
       color: #000;
    }
 
@@ -42,16 +42,36 @@
       color: $black;
    }
 
+   img{
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+   }
 
+   .text-right{
+      text-align: right;
+   }
 
+   .text-left{
+      text-align: left;
+   }
 
+   .text-center{
+      text-align: center;
+   }
+
+   hr{
+      background: $peach;
+      height: 0.625rem !important;
+      opacity: 1;
+      margin: 0;
+   }
 
 /* ==========================================================================
    Importing Styles
 ========================================================================== */
-   @import '../css/style';
 
-
+@import '../css/style';
 
 
 /* ==========================================================================
@@ -63,63 +83,63 @@
       margin-right: auto;
 
       @media screen and (max-width: $XL) {
-         margin-left: 120px;
-         margin-right: 120px;
+         margin-left: 3.75rem;
+         margin-right: 3.75rem;
       }
 
       @media screen and (max-width: $L) {
-         margin-left: 80px;
-         margin-right: 80px;
+         margin-left: 3.75rem;
+         margin-right: 3.75rem;
       }
 
       @media screen and (max-width: $M) {
-         margin-left: 48px;
-         margin-right: 48px;
+         margin-left: 1.5re,;
+         margin-right: 1.5re,;
       }
 
       @media screen and (max-width: $S) {
-         margin-left: 32px;
-         margin-right: 32px;
+         margin-left: 1rem;
+         margin-right: 1rem;
       }
    }
 
    .row.custom-gutter {
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
 
       @media screen and (max-width: $L) {
-         margin-left: 20px;
-         margin-right: 20px;
+         margin-left: 1.25rem;
+         margin-right: 1.25rem;
       }
 
       @media screen and (max-width: $M) {
-         margin-left: 12px;
-         margin-right: 12px;
+         margin-left: 0.75rem;
+         margin-right: 0.75rem;
       }
 
       @media screen and (max-width: $S) {
-         margin-left: 8px;
-         margin-right: 8px;
+         margin-left: 0.5rem;
+         margin-right: 0.5rem;
       }
    }
     
    .row.custom-gutter>div {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
 
       @media screen and (max-width: $L) {
-         padding-left: 20px;
-         padding-right: 20px;
+         padding-left: 1.25rem;
+         padding-right: 1.25rem;
       }
 
       @media screen and (max-width: $M) {
-         padding-left: 12px;
-         padding-right: 12px;
+         padding-left: 0.75rem;
+         padding-right: 0.75rem;
       }
 
       @media screen and (max-width: $S) {
-         padding-left: 8px;
-         padding-right: 8px;
+         padding-left: 0.5rem;
+         padding-right: 0.5rem;
       }
    }
 
@@ -136,9 +156,11 @@
       font-weight: 700;
       line-height: 56.7px;
       text-transform: uppercase;
+      margin-bottom: 1.5rem;
       @media screen and (max-width: $XS) {
-         font-size: 25px;
+         font-size: 1.5625rem;
          line-height: 22.5px;
+         margin-bottom: 12px;
       }
 
    }
@@ -150,7 +172,7 @@
       line-height: 47px;
       letter-spacing: -0.03em;
       @media screen and (max-width: $XS) {
-         font-size: 24px;
+         font-size: 1.5rem;
          line-height: 24px;
       }
    }
@@ -162,7 +184,7 @@
       line-height: 25.2px;
       text-transform: uppercase;
       @media screen and (max-width: $XS) {
-         font-size: 14px;
+         font-size: 0.875rem;
          line-height: 12.3px;
       }
    }
@@ -174,7 +196,45 @@
       line-height: 32.4px;
       letter-spacing: -0.01em;
       @media screen and (max-width: $XS) {
-         font-size: 16px;
+         font-size: 1rem;
          line-height: 19.2px;
       }
+   }
+
+/* ==========================================================================
+   Button
+========================================================================== */   
+   .btn{
+      display: flex;
+      align-items: center;
+      font-size: $p1;
+      font-family: $garamond;
+      font-weight: 400;
+      height: 4rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      border: 1px solid;
+      margin-top: 2rem;
+      letter-spacing: -0.01em;
+
+      svg{
+         margin-left: 5px;
+         margin-top: 5px;
+      }
+
+      @media screen and (max-width: $XS) {
+         font-size: 1rem;
+         line-height: 19.2px;
+         height: 3rem;
+         margin-top: 1.375rem;
+         padding-right: 1.5rem;
+         padding-left: 1.5rem;
+
+      }
+   }
+
+
+   .btn-peach{
+      background: $peach;
+      border-color: $peach;
    }
