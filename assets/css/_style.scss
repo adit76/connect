@@ -1,6 +1,7 @@
-// Reusable Components
+/* ==========================================================================
+   Reusable Components
+========================================================================== */
 .section-title-container{
-    margin-bottom: -3%;
     .section-title{
         width: 88%;
         height: auto;
@@ -11,16 +12,73 @@ h4.section-sub-title{
     margin: 48px 0;
 }
 
-// Connect Section
-#connect-section{
-    background: $dustyGreen;
-    padding: 7.5rem 0;
-}
-
 .promotion-section{
     padding-bottom: 7.5rem;
 }
 
+// Slider Section
+.primary-slider{
+    .slider-item{
+        .card-item{
+            background: $peach;
+            height: 493px;
+    
+            @media screen and (max-width: $XL) {
+                height: 404px; 
+            }  
+       
+            @media screen and (max-width: $XS) {
+                height: 196px;
+            }
+    
+            >div{
+                height: 50%;
+            }
+            .top-details{
+                padding: 2rem;
+                h5{
+                    margin-bottom: 0.75rem;
+                }
+            }
+            .bottom-image img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    } 
+}
+
+// Slider Variant
+.primary-slider-full{
+    .owl-stage-outer{
+        overflow: initial;
+    }
+}
+
+
+/* ==========================================================================
+   Connect Section
+========================================================================== */
+#connect-section{
+    background: $dustyGreen;
+    padding: 7.5rem 0;
+
+    .section-title-container{
+        margin-bottom: -3%;
+    }
+}
+
+/* ==========================================================================
+   Learn Section
+========================================================================== */
+#learn-section{
+    background: $dustyLilac;
+    padding: 7.5rem 0;
+
+    .section-title-container{
+        margin-bottom: -8%;
+    }
+}
 
 
 
