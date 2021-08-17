@@ -18,6 +18,10 @@ body {
   color: #000;
 }
 
+main {
+  overflow: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -44,13 +48,16 @@ hr {
   margin: 0;
 }
 
+.mt-120 {
+  margin-top: 7.5rem;
+}
+
 /* ==========================================================================
    Importing Styles
 ========================================================================== */
-.section-title-container {
-  margin-bottom: -3%;
-}
-
+/* ==========================================================================
+   Reusable Components
+========================================================================== */
 .section-title-container .section-title {
   width: 88%;
   height: auto;
@@ -60,13 +67,71 @@ h4.section-sub-title {
   margin: 48px 0;
 }
 
+.promotion-section {
+  padding-bottom: 7.5rem;
+}
+
+.primary-slider .slider-item .card-item {
+  background: #EFE1D4;
+  height: 493px;
+}
+
+@media screen and (max-width: 1679px) {
+  .primary-slider .slider-item .card-item {
+    height: 404px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .primary-slider .slider-item .card-item {
+    height: 196px;
+  }
+}
+
+.primary-slider .slider-item .card-item > div {
+  height: 50%;
+}
+
+.primary-slider .slider-item .card-item .top-details {
+  padding: 2rem;
+}
+
+.primary-slider .slider-item .card-item .top-details h5 {
+  margin-bottom: 0.75rem;
+}
+
+.primary-slider .slider-item .card-item .bottom-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.primary-slider-full .owl-stage-outer {
+  overflow: initial;
+}
+
+/* ==========================================================================
+   Connect Section
+========================================================================== */
 #connect-section {
   background: #C3C3B3;
   padding: 7.5rem 0;
 }
 
-.promotion-section {
-  padding-bottom: 7.5rem;
+#connect-section .section-title-container {
+  margin-bottom: -3%;
+}
+
+/* ==========================================================================
+   Learn Section
+========================================================================== */
+#learn-section {
+  background: #E1CECC;
+  padding: 7.5rem 0;
+}
+
+#learn-section .section-title-container {
+  margin-bottom: -8%;
 }
 
 /* ==========================================================================
