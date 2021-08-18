@@ -33,7 +33,8 @@
       padding: 0;
    }
 
-   html{
+   body{
+      font-family: $garamond;
       /* default font-size / 14px=1rem  */
       color: #000;
    }
@@ -69,10 +70,18 @@
       height: 0.625rem !important;
       opacity: 1;
       margin: 0;
+
+      @media screen and (max-width: $M) {
+         height: 0.5rem !important;
+      }
    }
 
    .mt-120{
       margin-top: 7.5rem;
+
+      @media screen and (max-width: $M) {
+         margin-top: 3.5rem;
+      }
    }
 
 /* ==========================================================================
@@ -101,8 +110,8 @@
       }
 
       @media screen and (max-width: $M) {
-         margin-left: 1.5re,;
-         margin-right: 1.5re,;
+         margin-left: 1.5rem;
+         margin-right: 1.5rem;
       }
 
       @media screen and (max-width: $S) {
@@ -165,10 +174,23 @@
       line-height: 56.7px;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
-      @media screen and (max-width: $XS) {
+
+      @media screen and (max-width: $L) {
+         font-size: 3.5rem;
+         line-height: 48.7px;
+         margin-bottom: 1rem;
+      }
+
+      @media screen and (max-width: $M) {
          font-size: 1.5625rem;
          line-height: 22.5px;
-         margin-bottom: 12px;
+         margin-bottom: 0.75rem;
+      }
+
+      br{
+         @media screen and (max-width: $M) {
+            display: none;
+         }
       }
 
    }
@@ -179,7 +201,13 @@
       font-weight: 400;
       line-height: 47px;
       letter-spacing: -0.03em;
-      @media screen and (max-width: $XS) {
+
+      @media screen and (max-width: $L) {
+         font-size: 2rem;
+         line-height: 32px;
+      }
+
+      @media screen and (max-width: $M) {
          font-size: 1.5rem;
          line-height: 24px;
       }
@@ -191,7 +219,13 @@
       font-weight: 700;
       line-height: 25.2px;
       text-transform: uppercase;
-      @media screen and (max-width: $XS) {
+
+      @media screen and (max-width: $L) {
+         font-size: 1.5rem;
+         line-height: 22.5px;
+      }
+
+      @media screen and (max-width: $M) {
          font-size: 0.875rem;
          line-height: 12.3px;
       }
@@ -203,7 +237,13 @@
       font-weight: 400;
       line-height: 32.4px;
       letter-spacing: -0.01em;
-      @media screen and (max-width: $XS) {
+
+      @media screen and (max-width: $L) {
+         font-size: 1.25rem;
+         line-height: 21.5px;
+      }
+
+      @media screen and (max-width: $M) {
          font-size: 1rem;
          line-height: 19.2px;
       }
@@ -222,6 +262,7 @@
       padding-right: 2rem;
       padding-left: 2rem;
       border: 1px solid;
+      border-radius: 0;
       margin-top: 2rem;
       letter-spacing: -0.01em;
 
@@ -230,7 +271,14 @@
          margin-top: 5px;
       }
 
-      @media screen and (max-width: $XS) {
+      @media screen and (max-width: $L) {
+         font-size: 1.25rem;
+         line-height: 21.5px;
+         height: 3rem;
+         margin-top: 1rem;
+      }
+
+      @media screen and (max-width: $M) {
          font-size: 1rem;
          line-height: 19.2px;
          height: 3rem;
