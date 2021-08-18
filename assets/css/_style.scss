@@ -9,27 +9,62 @@
 }
 
 h4.section-sub-title{
-    margin: 48px 0;
+    margin: 3rem 0;
+
+    @media screen and (max-width: $L) {
+        margin: 2rem 0;
+    }
+
+    @media screen and (max-width: $M) {
+        margin: 1.5rem 0;
+    }
 }
 
 .promotion-section{
     padding-bottom: 7.5rem;
+
+    @media screen and (max-width: $L) {
+        padding-bottom: 4.5rem;
+    }
+
+    @media screen and (max-width: $M) {
+        padding-bottom: 3.5rem;
+    }
+
+    img{
+        object-fit: cover;
+        @media screen and (max-width: $M) {
+            height: 300px;
+            margin-bottom: 1rem;
+        }
+        @media screen and (max-width: $S) {
+            height: 193px;
+        }
+    }
 }
 
 // Slider Section
-.primary-slider{
+.card-50-50{
     .slider-item{
         .card-item{
             background: $peach;
             height: 493px;
     
-            @media screen and (max-width: $XL) {
-                height: 404px; 
+            @media screen and (max-width: $L) {
+                height: 380px; 
             }  
        
+            @media screen and (max-width: $M) {
+                height: 290px;
+            }
+
+            @media screen and (max-width: $S) {
+                height: 230px;
+            }
+
             @media screen and (max-width: $XS) {
                 height: 196px;
-            }
+            }            
     
             >div{
                 height: 50%;
@@ -38,6 +73,14 @@ h4.section-sub-title{
                 padding: 2rem;
                 h5{
                     margin-bottom: 0.75rem;
+
+                    @media screen and (max-width: $M) {
+                        margin-bottom: 0.25rem;
+                    }
+                }
+
+                @media screen and (max-width: $M) {
+                    padding: 1rem;
                 }
             }
             .bottom-image img{
@@ -63,8 +106,20 @@ h4.section-sub-title{
     background: $dustyGreen;
     padding: 7.5rem 0;
 
+    @media screen and (max-width: $L) {
+        padding: 4.5rem 0;
+    }
+
+    @media screen and (max-width: $M) {
+        padding: 3.5rem 0;
+    }
+
     .section-title-container{
         margin-bottom: -3%;
+
+        @media screen and (max-width: $M) {
+            margin-bottom: -1%;
+        }
     }
 }
 
@@ -75,8 +130,126 @@ h4.section-sub-title{
     background: $dustyLilac;
     padding: 7.5rem 0;
 
+    @media screen and (max-width: $L) {
+        padding: 4.5rem 0;
+    }
+
+    @media screen and (max-width: $M) {
+        padding: 3.5rem 0;
+    }
+
     .section-title-container{
         margin-bottom: -8%;
+
+        @media screen and (max-width: $M) {
+            margin-bottom: -1%;
+        }
+    }
+
+    .promotion-section{
+        @media screen and (max-width: $M){
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+    }
+}
+
+.featured-slider{
+    // Image Variant
+    .card-item{
+        .image-wrapper{
+            position: relative;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: $M) {
+                margin-bottom: 0.5rem;
+            }
+            img{
+                height: 294.5px;
+                object-fit: cover;
+                @media screen and (max-width: $L) {
+                    height: 240px  ; 
+                }  
+           
+                @media screen and (max-width: $M) {
+                    height: 161px;
+                }
+
+                @media screen and (max-width: $S) {
+                    height: 134px;
+                }
+            }
+            svg{
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                width: 64px;
+                height: auto;
+                cursor: pointer;
+
+                @media screen and (max-width: $L) {
+                    bottom: 15px;
+                    left: 15px;
+                    width: 48px;
+                }
+
+                @media screen and (max-width: $M) {
+                    bottom: 10px;
+                    left: 10px;
+                    width: 32px;
+                }
+            }
+        }
+        .type-date{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+
+            @media screen and (max-width: $M) {
+                margin-bottom: 0.5rem;
+            }
+            span{
+                text-transform: uppercase;
+                padding: 0.375rem;
+                font-size: 0.875rem;
+                line-height: 11.2px;
+
+                @media screen and (max-width: $M) {
+                    font-size: 0.625rem;
+                    padding: 0.25rem;
+                }
+            }
+            span.type{
+                background: $peach;
+            }
+        }
+    }
+    
+
+    // No Image Variant
+    .variant-no-image{
+        .image-wrapper{
+            border-top: 6px solid #000;
+        }
+        .details{
+            p{
+                font-size: $h4;
+                font-family: $garamond;
+                font-weight: 400;
+                line-height: 47px;
+                letter-spacing: -0.03em;
+
+                @media screen and (max-width: $L) {
+                    font-size: 2rem;
+                    line-height: 32px;
+                }
+
+                @media screen and (max-width: $M) {
+                    font-size: 1.5rem;
+                    line-height: 24px;
+                }
+            }
+        }
     }
 }
 
