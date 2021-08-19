@@ -92,36 +92,64 @@ h4.section-sub-title {
   }
 }
 
-.promotion-section {
-  padding-bottom: 7.5rem;
+.img-border-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 1299px) {
-  .promotion-section {
-    padding-bottom: 4.5rem;
-  }
+.img-border-wrapper .bdr {
+  content: '';
+  position: absolute;
+  background: #000;
+}
+
+.img-border-wrapper .b-t {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.75rem;
+}
+
+.img-border-wrapper .b-b {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0.75rem;
+}
+
+.img-border-wrapper .b-l {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.75rem;
+}
+
+.img-border-wrapper .b-r {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.75rem;
 }
 
 @media screen and (max-width: 899px) {
-  .promotion-section {
-    padding-bottom: 3.5rem;
+  .promotion-section .img-border-wrapper {
+    margin-bottom: 1rem;
   }
 }
 
-.promotion-section img {
+.promotion-section .img-border-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media screen and (max-width: 899px) {
-  .promotion-section img {
+  .promotion-section .img-border-wrapper img {
     height: 300px;
-    margin-bottom: 1rem;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .promotion-section img {
+  .promotion-section .img-border-wrapper img {
     height: 193px;
   }
 }
@@ -192,65 +220,87 @@ h4.section-sub-title {
 /* ==========================================================================
    Connect Section
 ========================================================================== */
-#connect-section {
+.connect-section {
   background: #C3C3B3;
-  padding: 7.5rem 0;
+  padding-bottom: 7.5rem;
+  padding-top: 1px;
 }
 
 @media screen and (max-width: 1299px) {
-  #connect-section {
-    padding: 4.5rem 0;
+  .connect-section {
+    padding-bottom: 4.5rem;
+    padding-top: 1px;
   }
 }
 
 @media screen and (max-width: 899px) {
-  #connect-section {
-    padding: 3.5rem 0;
+  .connect-section {
+    padding-bottom: 3.5rem;
+    padding-top: 1px;
   }
 }
 
-#connect-section .section-title-container {
+.connect-section .section-title-container {
   margin-bottom: -3%;
+  padding-top: 7.5rem;
+}
+
+@media screen and (max-width: 1299px) {
+  .connect-section .section-title-container {
+    padding-top: 4.5rem;
+  }
 }
 
 @media screen and (max-width: 899px) {
-  #connect-section .section-title-container {
+  .connect-section .section-title-container {
     margin-bottom: -1%;
+    padding-top: 3.5rem;
   }
 }
 
 /* ==========================================================================
    Learn Section
 ========================================================================== */
-#learn-section {
+.learn-section {
   background: #E1CECC;
-  padding: 7.5rem 0;
+  padding-bottom: 7.5rem;
+  padding-top: 1px;
 }
 
 @media screen and (max-width: 1299px) {
-  #learn-section {
-    padding: 4.5rem 0;
+  .learn-section {
+    padding-bottom: 4.5rem;
+    padding-top: 1px;
   }
 }
 
 @media screen and (max-width: 899px) {
-  #learn-section {
-    padding: 3.5rem 0;
+  .learn-section {
+    padding-bottom: 3.5rem;
+    padding-top: 1px;
   }
 }
 
-#learn-section .section-title-container {
+.learn-section .section-title-container {
   margin-bottom: -8%;
+  padding-top: 7.5rem;
 }
 
-@media screen and (max-width: 899px) {
-  #learn-section .section-title-container {
-    margin-bottom: -1%;
+@media screen and (max-width: 1299px) {
+  .learn-section .section-title-container {
+    padding-top: 4.5rem;
   }
 }
 
 @media screen and (max-width: 899px) {
-  #learn-section .promotion-section {
+  .learn-section .section-title-container {
+    margin-bottom: -1%;
+    padding-top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .learn-section .promotion-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
