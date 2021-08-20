@@ -58,7 +58,6 @@ $("section").each(function(i) {
 
 
   // Scroll Trigger 
-  
   new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook: 0.80,

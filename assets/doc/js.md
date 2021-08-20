@@ -1,15 +1,22 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
-table of contents](TOC.md)
-
 # The JavaScript
 
 Information about the default JavaScript included in the project.
 
 ## main.js
 
-This file can be used to contain or reference your site/app JavaScript code. If
-you're working on something more advanced you might replace this file entirely.
-That's cool.
+Owl Slider Initialization is done here.
+
+## animations.js
+
+GSAP animations is done in this file. TweenMax 2.1.3, CSSPlugin 2.1.2 and ScrollMagic 2.0.7 packages are used.
+It is primarily separated into the following animations:
+* Section Title
+* Section Sub-Title
+* Border
+* HR
+* Slider Items
+* Promotion Section
+* Promotion Section Bordered Image
 
 ## plugins.js
 

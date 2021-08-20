@@ -1,3 +1,4 @@
+// Slider Initialization
 $(document).ready(function(){
     $(".primary-slider").owlCarousel({
       dots: false,
@@ -16,4 +17,4 @@ $(document).ready(function(){
         }
       }
     });
-  });
+});

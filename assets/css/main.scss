@@ -3,7 +3,6 @@
    Variable Declarations
 ========================================================================== */
    // Color Declarations
-   $black: #000;
    $dustyGreen: #C3C3B3;
    $dustyLilac: #E1CECC;
    $peach: #EFE1D4;
@@ -37,10 +36,6 @@
       font-family: $garamond;
       /* default font-size / 14px=1rem  */
       color: #000;
-   }
-
-   body{
-      color: $black;
    }
 
    main{
@@ -83,13 +78,6 @@
          margin-top: 3.5rem;
       }
    }
-
-/* ==========================================================================
-   Importing Styles
-========================================================================== */
-
-@import '../css/style';
-
 
 /* ==========================================================================
    Custom Container, Grid System
@@ -265,6 +253,11 @@
       border-radius: 0;
       margin-top: 2rem;
       letter-spacing: -0.01em;
+      transition: 0.3s ease;
+
+      &:hover{
+         transform: translateY(-5px);
+      }
 
       svg{
          margin-left: 5px;
@@ -294,3 +287,9 @@
       background: $peach;
       border-color: $peach;
    }
+
+
+   /* ==========================================================================
+   Importing Styles
+   ========================================================================== */
+   @import '../css/style';
