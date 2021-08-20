@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Aditya Raj Sapkota> -- <Front End Developer>
 
 # THANKS
 
-    <name>
+    <Outside Tech. Inc>
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
+    CSS3, SASS, HTML5, JS
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Bootstrap 5.0
+    Owl Carousel 2.3.4
+    GSAP V.2

@@ -1,10 +1,6 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
-table of contents](TOC.md)
+# Extend and customise
 
-# Extend and customise HTML5 Boilerplate
-
-Here is some useful advice for how you can make your project with HTML5
-Boilerplate even better. We don't want to include it all by default, as not
+Here is some useful advice for how you can make your project even better. We don't want to include it all by default, as not
 everything fits with everyone's needs.
 
 * [App Stores](#app-stores)
